@@ -21,15 +21,16 @@ Setup environment variables for your credentials and config:
     export VPN_USERNAME='myuser@myhost.com'
     export VPN_PASSWORD='mypass'
 
+Note: **VPN_SERVER_IPV4** must be an IP address. It will not work with domain name possibly because VPN server does some matches.
+
 Now run it (you can daemonize of course after debugging):
 
-    docker run --rm -it --privileged --net=host \
-               -v /lib/modules:/lib/modules:ro \
+    docker run -d -it --privileged --net=host \
                -e VPN_SERVER_IPV4 \
                -e VPN_PSK \
                -e VPN_USERNAME \
                -e VPN_PASSWORD \
-                  ubergarm/l2tp-ipsec-vpn-client
+                  exNewbie/l2tp-ipsec-vpn-client
 
 ## Route
 From the host machine configure traffic to route through VPN link:
