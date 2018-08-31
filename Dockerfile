@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:17.10
 
 ENV LANG C.UTF-8
 
