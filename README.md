@@ -30,7 +30,7 @@ Now run it (you can daemonize of course after debugging):
                -e VPN_PSK \
                -e VPN_USERNAME \
                -e VPN_PASSWORD \
-                  exNewbie/l2tp-ipsec-vpn-client
+               exnewbie/l2tp-client
 
 ## Route
 From the host machine configure traffic to route through VPN link:
