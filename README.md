@@ -13,7 +13,7 @@ here is all you need:
 3. Username
 4. Password
 
-## Run
+## Configure credentials
 Setup environment variables for your credentials and config:
 
     export VPN_SERVER_IPV4='1.2.3.4'
@@ -22,6 +22,11 @@ Setup environment variables for your credentials and config:
     export VPN_PASSWORD='mypass'
 
 Note: **VPN_SERVER_IPV4** must be an IP address. It will not work with domain name possibly because VPN server does some matches.
+
+## Build an image and Run a container
+Build a docker image
+
+    docker build . -t pm-l2tp
 
 Now run it (you can daemonize of course after debugging):
 
